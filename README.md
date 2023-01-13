@@ -1,4 +1,4 @@
-# site7-color
+# site7-color-matching-game
 This is a color matching game.
 Jquery is utilized.
 
