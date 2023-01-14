@@ -1,8 +1,8 @@
 'use strict'
 
 const colors = ['red', 'blue', 'green', 'yellow']
-const gamePattern = []
-const userClickedPattern = []
+let gamePattern = []
+let userClickedPattern = []
 
 
 
@@ -95,11 +95,16 @@ function checkAnswer(currentColor){
         },1000)
         
         $('#level-title').text('Game over, Enter a key to restart')
-        
-        
-
-
+        restart()
     }
+}
 
+function restart(){
+    gamePattern = []
+    userClickedPattern = []
+    start = false
+    level = 1
+    count1 = 0
+    count2 = 0
 }
 
