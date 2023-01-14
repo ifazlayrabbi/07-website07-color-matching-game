@@ -76,8 +76,8 @@ function checkAnswer(currentColor){
     // console.log('gamePattern['+ currentColor + '] = ' + gamePattern[currentColor])
     // console.log('userClickedPattern['+ currentColor + '] = ' + userClickedPattern[currentColor])
     
-    if (userClickedPattern.length == gamePattern.length){
-        if(gamePattern[currentColor] == userClickedPattern[currentColor]){
+    if (gamePattern[currentColor] == userClickedPattern[currentColor]){
+        if(userClickedPattern.length == gamePattern.length){
             console.log('success !!')
             
             setTimeout(function(){
@@ -85,7 +85,21 @@ function checkAnswer(currentColor){
             }, 1000) 
         }
     }
-    else
+    else{
         console.log('Error !')
+        playSound('error')
+
+        $('body').addClass('game-over')
+        setTimeout(function(){
+            $('body').removeClass('game-over')
+        },1000)
+        
+        $('#level-title').text('Game over, Enter a key to restart')
+        
+        
+
+
+    }
+
 }
 
