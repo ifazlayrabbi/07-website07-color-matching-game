@@ -1,5 +1,5 @@
-# site7-color-matching-game
-Website: https://ifazlayrabbi.github.io/site7-color-matching-game/
+# website07-color-matching-game
+Website: https://ifazlayrabbi.github.io/website07-color-matching-game/
 
 - This is a color matching game. 
 - Jquery is utilized.
